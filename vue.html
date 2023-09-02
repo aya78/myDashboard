@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elzero-app">
+        <h1>Welcome {{name}} to my channel</h1>
+        <p>your age is  {{age +'years'}} </p>
+        <p>your last skill is  {{skills[2]}} </p>
+        <p> you are {{isSubscriped ? 'Subscriped': 'Not Subscriped'}}</p>
+        <p> your fisrt test result {{completed_tests[0].score}}</p>
+        <p>{{saySomething()}}</p>
+
+        <p>{{calc_your_age()}}</p>
+        <p>{{counter}}</p>
+        <!-- can also type like @click -->
+        <button v-on:click="counter++">Update Counter</button>
+        <br>
+        <p v-text="name ? 'your name is set ': 'your name is not set'"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus 
+            deleniti quas magni explicabo temporibus. Veritatis tempore eaque
+             debitis fuga nesciunt. Quod laborum 
+            repellat animi dolore expedita saepe in debitis! Dignissimos!</p>
+            <p v-html="title"></p>
+            <ul>
+                My Skills
+                <li v-for="(skill,index) in skills"> 
+                   {{index}} => {{skill}}
+                </li>
+            </ul>
+            <ul>
+                My Skills
+                <li v-for="(test,index) in completed_tests"> 
+                   {{index}} => {{test.test_name }} - {{test.score}}
+                </li>
+            </ul>
+            <p v-once >{{name}}</p>
+            <!-- <p v-show="name">name : {{name}}</p> -->
+            <a v-bind:href="img_url">
+                <img v-bind:src="img_src" alt="imgAltText">
+            </a>
+            
+        </div>
+
+    <script src="js/vue.js"></script>
+    
+    <script>
+        var vm = new Vue({
+            el:'#elzero-app',
+            data :{
+                name:'osama',
+                age : 25, 
+                skills:['HTML','CSS','JS'],
+                title:'<div class="rank">Noob</div>',
+                counter:1,
+                isSubscriped : false ,
+                img_url:'http://www.google.com',
+                img_src:'images/avatar.png',
+                imgAltText:'the alternate text',
+                completed_tests :[
+                    {
+                        test_name: 'first test',
+                        score :'80%'
+                    },
+                    {
+                        test_name: 'second test',
+                        score :'50%'
+                    },
+                    {
+                        test_name: 'third test',
+                        score :'30%'
+                    }
+                ]
+
+            },
+            methods:{
+                saySomething:function(){
+                return 'Hello from vue.js methods'
+            },
+            calc_your_age: function(){
+                return 'your age in days is: ' + this.age *365;
+            }
+            }
+          
+        
+            
+        })
+    </script>
+</body>
+</html>
