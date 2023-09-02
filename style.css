@@ -366,6 +366,45 @@ border-bottom: 1px solid #eee;
     border-bottom: 1px solid rgb(209, 207, 207);
     padding: 15px;
 }
+/** items start*************  */
+
+.items{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+}
+.items .view{
+    float: right;
+    margin-left: 358px;
+}
+.items-body .item{
+    padding-bottom: 10px;
+    padding: 18px;
+}
+.items-head p{
+    color: var(--grey-color);
+}
+/******************************** */
+/** Start uploads********* */
+.uploads{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+}
+.uploads .upload span{
+    display: inline;
+}
+.uploads-body .para{
+    color: var(--grey-color);
+}
+.uploads-body .upload{
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.uploads-body p{
+    color: var(--grey-color);
+}
 /** projects start*************  */
 .projects-row .table img{
     width: 40px;
@@ -391,3 +430,6 @@ border-bottom: 1px solid #eee;
     color: white;
     margin-left: -20px;
 }
+/** projects End*************  */
+
+
