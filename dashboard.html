@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/all.min.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <title>Document</title>
@@ -28,10 +28,8 @@
                   <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <i class=" fa-chart-bar fa-fw " ></i>
                     <i class="fas fa-circle" style="z-index: 2;"></i>
-                    <h3 class="fs-4 p-relative txt-c mt-0 align-center">Elzero</h3>
+                    <h3 class="fs-4 p-relative txt-c mt-2 align-center">Elzero</h3>
                   </a>
-                  
-              
                 <hr>
                 <ul class="nav nav-pills  border-white mb-auto flex-column ">
                     <li class="nav-item">
@@ -41,7 +39,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link d-flex align-center fs-14 c-black p-20" href="#">
+                      <a class="nav-link d-flex align-center fs-14 c-black p-20" href="settings.html">
                         <i class="fa-regular fa-chart-bar fa-fw"></i>
                         Settings
                     </a>
@@ -67,7 +65,7 @@
                   </ul>
             </div>
             <div class="content w-full">
-              <div class="head bg-white p-15 between-flex" >
+              <div class="head bg-white p-15 between-flex" style="padding-bottom: 10px;">
                 <div class="search p-relative">
                   <input id="search-input" type="search" id="form1"  placeholder="Type A keyword" />
                 </div>
@@ -78,8 +76,8 @@
                   </div>
               </div>
               <h1 class="p-relative">Dashboard</h1>
-              <div class="wrapper container-fluid-xl px-4">
-              <div class="row">
+              <div class="wrapper container-fluid">
+              <div class="row ">
                 <div class="col-md-6  mb-xl-0">
                   <div class="header">
                     <h2>Welcome</h2>
@@ -87,51 +85,349 @@
                   </div>
                   <img src="images/avatar.png" alt class="avatar">
                   <div class="body txt-c d-flex">
-                  <div>
+                  <div class="col">
                     Osama Elzero
                     <span class="d-block fs-14 c-grey mt-10">Developer</span>
                   </div>
-                  <div>
+                  <div class="col">
                     80
                     <span class="d-block fs-14 c-grey mt-10">Projects
                     </span>
                   </div>
-                  <div>
+                  <div class="col">
                     $8500
 
                     <span class="d-block fs-14 c-grey mt-10">Earned</span>
                   </div>
                   </div>
-                  <a href="www.google.com"></a>
+                  <a href="https://www.google.com" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape float-right">Profile </a>
+                
                 </div>
-                <div class="col"></div>
+                <!--Start Quick Draft Widget-->
+
+                <div class="col bg-white">
+                  <div class="quick-draft p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Quick Draft</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
+                    <form class="p-10 ml-10">
+                      <input class="d-block mb-20 w-full  b-none bg-eee rad-6" type="text" placeholder="Title">
+                      <textarea class="d-block mb-20 w-full b-none bg-eee rad-6" placeholder="Your Thought"></textarea>
+                      <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit" value="Save">
+                    </form>
+                  </div>
+                  <!-- End Quick Draft Widget -->
+                </div>
               </div>
               <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+                <!--Start targets section-->
+
+                <div class="col p-20  mb-xl-0">
+                  <div class="targets p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Yearly Targets</h2>
+                    <p class=" mt-0 mb-20 c-grey fs-15">Targets Of The Year  </p>
+                    <div class="target-row center-flex mb-20">
+                      <div class="icon center-flex">
+                        <i class="fa-solid fa-lg fa-dollar-sign" style="color: blue;"></i>
+                      </div>
+                      <div class="details">
+                        <span class="fs-14 c-grey md-5">Money</span>
+                        <span class="d-block mb-10 fw-bold">$20.000</span>
+                        <div class="progress p-relative">
+                          <span class="bg-blue blue" style="width: 80%">
+                            <span class="bg-blue">80%</span>
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  <div class="target-row center-flex mb-20 orange">
+                      <div class="icon2 center-flex ">
+                        <i class="fa-duotone fa-lg fa-code " style="--fa-primary-color: #f6760e; --fa-secondary-color: #f6760e;"></i>                      </div>
+                      <div class="details">
+                        <span class="fs-14 c-grey md-5">Projects
+                        </span>
+                        <span class="d-block mb-10 fw-bold">24</span>
+                        <div class="progress p-relative">
+                          <span class="bg-orange orange" style="width: 55%">
+                            <span class="bg-orange">55%</span>
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="target-row center-flex mb-20">
+                      <div class="icon3 center-flex">
+                        <i class="fa-solid fa-lg fa-people-group" style="color: green;"></i>
+                        <!-- <i class="fa-solid fa-people-group" style="color: #5cc804;"></i> -->
+                      </div>
+                      <div class="details">
+                        <span class="fs-14 c-grey md-5">Team</span>
+                        <span class="d-block mb-10 fw-bold">12</span>
+                        <div class="progress p-relative">
+                          <span class="bg-green green" style="width: 80%">
+                            <span class="bg-green">75%</span>
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <!--End targets section-->
+
+                <!--Start statistices section-->
+                <div class="col">
+                  <div class="Statistics">
+                    <div class="head">
+                      <h2>Tickets Statistics </h2>
+                      <p>Everything About Support Tickets </p>
+                    </div>
+                    <div class="status-row between-flex gap-20">
+                      <div class="col bg-white ">
+                          <i></i>
+                          <h2 class="fw-bold fs-20">2500</h2>
+                          <br>
+                          <span> Total</span>
+                        </div>
+                        <div class="col bg-white">
+                          <i></i>
+                          <h2 class="fw-bold fs-20">500</h2>
+                          <br>
+                          <span> Pending</span>
+                        </div>
+                      
+                  
+                      </div>
+                    <div class="status-row between-flex">
+                      <div class="col bg-white">
+                       
+                          <i></i>
+                          <h2 class="fw-bold fs-20">1900</h2>
+                          <br>
+                          <span class="bg-eee"> Closed</span>
+                        </div>
+                        <div class="col bg-white">
+                          <i></i>
+                          <h2 class="fw-bold fs-20">100</h2>
+                          <br>
+                          <span> Deleted</span>
+                        </div>
+                      </div>
+                
+                      </div>
+                    
+                  </div>
+                   <!--End statistices section-->
+
+                </div>
+                <div class="row ">
+                  <!-- Start news section-->
+                  <div class="col mb-xl-0 p-20 txt-c ml-10">
+                    <div class="news bg-white ">
+                      <h2>Latest News</h2>
+                      <div class="content bg-white  ">
+                        <div class="new d-flex">
+                          <img src="images/news-01.png" alt="">
+                          <h4 class="p-15 ml-10"> Created SASS Section</h4>
+                          
+                          <p class="d-block"> New SASS Examples & Tutorials</p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">3 Days Ago</a>
+                        </div>
+                        <div class="new d-flex">
+                          <img src="images/news-02.png" alt="">
+                          <h4 class="p-15 ml-10"> Created SASS Section</h4>
+                          
+                          <p class="d-block"> New SASS Examples & Tutorials</p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">5 Days Ago</a>
+                        </div>
+                        <div class="new d-flex">
+                          <img src="images/news-03.png" alt="">
+                          <h4 class="p-15 ml-10"> Created SASS Section</h4>
+                          
+                          <p class="d-block"> New SASS Examples & Tutorials</p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">7 Days Ago</a>
+                        </div>
+                        <div class="new d-flex">
+                          <img src="images/news-04.png" alt="">
+                          <h4 class="p-15 ml-10"> Created SASS Section</h4>
+                          
+                          <p class="d-block"> New SASS Examples & Tutorials</p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">9 Days Ago</a>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End news section-->
+                  <!--Start tasks section-->
+                  <div class="col mb-xl-0 p-20 txt-c ml-10 bg-white">
+                    <div class="tasks">
+                      <h2>Latest Tasks</h2>
+                      <div class="content bg-white ">
+                        <div class="task d-flex">
+                          <h4 class="p-15 ml-10"> Record One New Video</h4>
+                          
+                          <p class="d-block">  Record Python Create Exe Project                          </p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 448 512">
+                          
+                              <style>svg{fill:#4d5056}</style><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 
+                              96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3
+                               0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9
+                                45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg> </a>
+                        </div>
+                        <div class="task d-flex">
+                          <h4 class="p-15 ml-10"> Write Article</h4>
+                          
+                          <p class="d-block"> Write Low Level vs High Level Languages </p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">
+                         
+                              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 448 512">
+                            
+                                <style>svg{fill:#4d5056}</style><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 
+                                96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3
+                                 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9
+                                  45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg> 
+                          </a>
+                        </div>
+                        <div class="task d-flex">
+                          <h4 class="p-15 ml-10"> Finish Project                          </h4>
+                          
+                          <p class="d-block"> Publish Academy Programming Project                          </p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 448 512">
+                            
+                              <style>svg{fill:#4d5056}</style><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 
+                              96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3
+                               0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9
+                                45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg> 
+                          </a>
+                        </div>
+                        <div class="task d-flex">
+                          <h4 class="p-15 ml-10 " style="text-decoration: line-through;"> Attend The Meeting </h4>
+                          
+                          <p class="d-block c-grey" style="text-decoration: line-through;"> Attend The Project Business Analysis Meeting                          </p>
+                          <a href="" class="date d-block fs-14 bg-grey c-black btn-shape float-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 448 512">
+                            
+                              <style>svg{fill:#4d5056}</style><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 
+                              96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3
+                               0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9
+                                45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg> 
+                          </a>
+                        </div>
+                        
+                        
+
+                    </div>
+                  </div>
+                  
+                </div>
+                 <!--End tasks section-->
+ 
+
               </div>
-              <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-              </div>
+              <div class="projects-row mt-10">
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Finish Date	</th>
+                      <th scope="col">Client</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Team</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ministry Wikipedia	</dh>
+                      <td>10 May 2022</td>
+                      <td>Ministry</td>
+                      <td>$5300	</td>
+                      <td>
+                        <img src="images/team-01.png">
+                        <img src="images/team-02.png">
+                        <img src="images/team-05.png">
+                      </td>
+                      <td>
+                        <span class="label btn-shape bg-orange c-white fs-14 ">Pending</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Ministry Wikipedia	</dh>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$1500		</td>
+                        <td>
+                          <img src="images/team-01.png">
+                          <img src="images/team-02.png">
+                        </td>
+                        <td>
+                          <span class="label btn-shape bg-blue c-white">In Progress</span>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>Ministry Wikipedia	</dh>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$800	</td>
+                        <td>
+                          <img src="images/team-01.png">
+                          <img src="images/team-02.png">
+                          <img src="images/team-03.png">
+                          <img src="images/team-05.png">
+
+                        </td>
+                        <td>
+                          <span class="label btn-shape bg-green  c-white">Completed</span>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>Ministry Wikipedia	</dh>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$600	</td>
+                        <td>
+                          <img src="images/team-01.png">
+                          <img src="images/team-02.png">
+                        </td>
+                        <td>
+                          <span class="label btn-shape bg-green c-white">Completed</span>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>Ministry Wikipedia	</dh>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$300	</td>
+                        <td>
+                          <img src="images/team-01.png">
+                          <img src="images/team-02.png">
+                          <img src="images/team-03.png">
+                        </td>
+                        <td>
+                          <span class="label btn-shape bg-red c-white">Rejected</span>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+               </div>
+
               </div>
   
             </div> 
-            <div class="quick-draft p-20 bg-white rad-10">
-              <h2 class="mt-0 mb-10">Quick Draft</h2>
-              <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
-              <form>
-                <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text" placeholder="Title">
-                <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" placeholder="Your Thought"></textarea>
-                <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit" value="Save">
-              </form>
-            </div>
-            <!-- End Quick Draft Widget -->
+
   
 
         
         
-    </div>
-    <script src="assets/js/bootstrap.bundle.min.js.map"></script>
+    
+    <!-- <script src="assets/js/bootstrap.bundle.min.js.map"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

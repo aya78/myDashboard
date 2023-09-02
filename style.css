@@ -1,11 +1,45 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+.bg-blue , .c-blue{
+    background-color: var(--blue-color);
+}
+.bg-orange , .c-orange{
+    background-color: var(--orange-color);
+}
+.bg-green{
+    background-color: var(--green-color);
+}
+.br-grey{
+    background-color: var(--grey-color);
+}
+.bg-red{
+    background-color: var(--red-color);
+}
+.fa-lg {
+    font-size: 1.25em;
+    line-height: 0.05em;
+    vertical-align: -0.075em;
+}
 .between-flex{
     display: flex;
      justify-content:space-between;
      align-items: center;
      
+}
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .page{
     display: flex;
@@ -54,9 +88,9 @@
 
 }
 .content{
-    background-color: rgba(178, 199, 224, 0.979);
+    background-color: rgba(230, 240, 250, 0.979);
 }
-.content h1::before{
+.page h1::before{
 background-color: white;
 width: 120px;
 }
@@ -64,7 +98,7 @@ width: 120px;
     margin: 10px 20px 30px;
     display: block;
 }
-.content h1::after{
+.page h1::after{
     background-color: black;
     width: 40px;
 } 
@@ -73,15 +107,274 @@ width: 120px;
 }
 
 .content .avatar{
-    width: 64px;
+    width: 40px;
     margin-left:20px;
-    margin-top: -5px;
-    height: 64px;
+    margin-top: -20px;
+    height: 40px;
 }
 .content .header{
-    background-color:#eee;
+    background-color:#f0eded;
 
 }
 .col{
     border:#eee;
+}
+
+.p-10{
+    padding: 10px;
+
+}
+.w-full{
+    width: 100%;
+}
+.quick-draft textarea {
+    resize: none;
+    min-height: 150px;
+    margin-top: 10px;
+}
+.quick-draft .save{
+    color: white;
+    background-color: rgb(22, 22, 121);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+.body div{
+    gap:10px
+}
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
+        text-decoration: none;
+        float: right;
+}
+.body{
+    border-top: 1px solid rgb(221, 219, 219);
+                    border-bottom: 1px solid rgb(221, 219, 219);
+                    padding: 15px;
+                    display: inline;
+}
+.header{
+    height: 120px;
+}
+
+.visit{
+    
+    margin: 0px 15px 15px auto;
+    transition: all 0.3s ease 0s;
+    color: white;
+    background-color: blue;
+    margin-top: 10px;
+    
+
+}
+/**/target start************************* */
+.rad-10 {
+    border-radius: 10px;
+}
+.targets{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.targets .target{
+    display: flex;
+}
+.targets .progress{
+    position: relative;
+    height: 5px;
+    margin-right: 10px;
+    
+}
+/*******************************************************************/
+.targets .details {
+    flex: 1 1 0%;
+}
+.targets .details .progress > span {
+    position: relative;
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    color: blue;
+}
+.targets .details .progress > span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    font-size: 13px;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.fa-dollar-sign::before, .fa-dollar::before, .fa-usd::before {
+    content: "$";
+    
+}
+/* .fa-code::before{
+    content: "</>";
+} */
+.targets .target-row .icon{
+
+         background-color: azure; 
+      /*  color: blue; */
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.targets .target-row .icon2{
+
+    background-color:#f1c097; 
+ /*  color: blue; */
+width: 70px;
+height: 70px;
+margin-right: 15px;
+margin-left: 10px;
+margin-bottom: 10px;
+
+}
+.targets .target-row .icon3{
+
+    background-color: rgb(187, 243, 187); 
+ /*  color: blue; */
+width: 70px;
+height: 70px;
+margin-right: 15px;
+margin-left: 10px;
+margin-bottom: 10px;
+
+}
+.targets .target-row .icon i{
+
+ font-weight: bold;
+ align-items: center;
+ margin-left: 20px;
+ height: 40px;
+ width: 40px;
+        
+}
+/** start Statistics****************** */
+.Statistics{
+    margin-top: 20px;
+    background-color: white;
+}
+.Statistics .head{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.Statistics .status-row .col{
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    border: solid 0.5px grey;
+    border-radius: 10px;
+    gap: 10px;
+    margin: 10px;
+}
+.Statistics .status-row span{
+    margin-top: 20px;
+}
+/** new section start********************* */
+.news .date{
+    margin: 0px 15px 15px auto;
+    transition: all 0.3s ease 0s;
+    color: black;
+    background-color: gray;
+    margin-top: 5%;
+}
+.news img{
+    width: 120px;
+    height: 70px;
+}
+.news p{
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 30px;
+}
+.news .new::after{
+    content: "";
+    height: 3px;
+    color: black;
+    margin-left:10px ;
+    margin-right:10px ;
+border-bottom: 1px solid #eee;
+}
+.news .content{
+   /* border-top: 1px solid rgb(138, 136, 136);*/
+                    
+                
+}
+.news .new{
+    border-bottom: 1px solid rgb(209, 207, 207);
+    padding: 15px;
+}
+/** task section start *********************************** */
+.tasks .date{
+    margin: 0px 15px 15px auto;
+    transition: all 0.3s ease 0s;
+    color: black;
+    height: 45px;
+    width: 45px;
+}
+.tasks img{
+    width: 120px;
+    height: 70px;
+}
+.tasks p{
+    position: absolute;
+   
+    padding-top: 30px;
+}
+/* .tasks .task::after{
+    content: "";
+    height: 3px;
+    color: black;
+    margin-left:10px ;
+    margin-right:10px ;
+border-bottom: 1px solid #eee;
+} */
+
+.tasks .task{
+    border-bottom: 1px solid rgb(209, 207, 207);
+    padding: 15px;
+}
+/** projects start*************  */
+.projects-row .table img{
+    width: 40px;
+   
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+.projects-row tbody td{
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.projects-row table img:not(:first-child) {
+    margin-left: -20px;
+}
+.table{
+    margin-top: 20px;
+}
+.projects-row tbody .label{
+    align-items: center;
+    margin-right: 40px;
+    color: white;
+    margin-left: -20px;
 }
