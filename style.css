@@ -127,17 +127,30 @@ width: 120px;
 .w-full{
     width: 100%;
 }
+
+
+.bg-eee {
+    background-color: #eee;
+}
+.rad-6{
+    border-radius: 6px;
+}
 .quick-draft textarea {
     resize: none;
     min-height: 150px;
     margin-top: 10px;
+    border: #888;
 }
 .quick-draft .save{
     color: white;
-    background-color: rgb(22, 22, 121);
+    background-color: var(--blue-color);
     margin-top: 5px;
     margin-bottom: 10px;
+    cursor: pointer;
     
+}
+.b-none{
+    border: none;
 }
 .body div{
     gap:10px
