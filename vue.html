@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="elzero-app">
-        <h1>Welcome {{name}} to my channel</h1>
+        
         <p>your age is  {{age +'years'}} </p>
         <p>your last skill is  {{skills[2]}} </p>
         <p> you are {{isSubscriped ? 'Subscriped': 'Not Subscriped'}}</p>
@@ -40,20 +40,41 @@
             <p v-once >{{name}}</p>
             <!-- <p v-show="name">name : {{name}}</p> -->
             <a v-bind:href="img_url">
-                <img v-bind:src="img_src" alt="imgAltText">
+                <!-- <img v-bind:src="img_src" alt="imgAltText"> -->
             </a>
+            <input v-model:name="name" type="email" placeholder="using v-model"  >
+
+            <p > your name is : {{name}}</p>    
+
+            <input v-model:check="check" type="checkbox" placeholder="using v-model"  >
+
+            <p > your name is : {{check}}</p> 
+
+
             
         </div>
 
     <script src="js/vue.js"></script>
     
     <script>
+     Vue.Component('app-count',{
+            data : function(){
+                return {
+                    name:'ahmed',
+                    count : 0
+                }
+
+            }
+        
+
+        })
         var vm = new Vue({
             el:'#elzero-app',
             data :{
                 name:'osama',
                 age : 25, 
                 skills:['HTML','CSS','JS'],
+                check:true,
                 title:'<div class="rank">Noob</div>',
                 counter:1,
                 isSubscriped : false ,

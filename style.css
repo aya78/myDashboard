@@ -124,6 +124,7 @@ width: 120px;
 }
 .col{
     border:#eee;
+    border-radius: 5px;
 }
 
 .p-10{
