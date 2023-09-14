@@ -49,25 +49,30 @@
             <input v-model:check="check" type="checkbox" placeholder="using v-model"  >
 
             <p > your name is : {{check}}</p> 
+            <label> languages : </label>
+            <input  type="text" v-model="find_language  ">
+            <ul>
+                <li v-for="lang in filter_language">
+                    {{lang}}
+                </li>
+            </ul>
 
-
-            
         </div>
 
     <script src="js/vue.js"></script>
     
     <script>
-     Vue.Component('app-count',{
-            data : function(){
-                return {
-                    name:'ahmed',
-                    count : 0
-                }
 
-            }
-        
+    //  Vue.Component('app-count',{
+    //         data : function(){
+    //             return {
+    //                 name:'ahmed',
+    //                 count : 0
+    //             }
 
-        })
+    //         }
+    
+    //     })
         var vm = new Vue({
             el:'#elzero-app',
             data :{
@@ -95,6 +100,16 @@
                         score :'30%'
                     }
                 ]
+                ,
+                find_language:'',
+                languages:[
+                    'html',
+                    'css',
+                    'php',
+                    'java',
+                    'sass',
+                    'c#',
+                ]
 
             },
             methods:{
@@ -104,10 +119,16 @@
             calc_your_age: function(){
                 return 'your age in days is: ' + this.age *365;
             }
+            },  
+            computed:{
+                filter_language:function(){
+                    var filtering = new RegExp(this.find_language,'i');
+                    return this.languages.filter(function(el){
+                        return el.match(filtering);
+                    })
+                }
+                
             }
-          
-        
-            
         })
     </script>
 </body>
